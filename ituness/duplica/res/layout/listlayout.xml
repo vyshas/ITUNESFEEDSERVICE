@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#3333"
+    android:orientation="vertical"
+    android:id="@+id/l1">
+
+    <TextView
+        android:id="@+id/titleView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="2dp"
+        android:text="Title"
+        android:textColor="@color/AntiqueWhite"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        android:typeface="monospace" />
+    
+      
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="170px"
+        android:layout_height="170px"
+        android:layout_below="@+id/titleView"
+        android:layout_centerHorizontal="true"
+        android:layout_margin="10dp" />
+    
+    
+
+     <!-- this is the button that will trigger sliding of the expandable view 
+        <Button
+                android:id="@+id/expandable_toggle_button"
+                android:text="More"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@+id/text"
+                android:layout_alignParentRight="true"
+                android:layout_alignTop="@id/text"/>
+                
+                -->
+   <!-- this is the expandable view that is initially hidden and will slide out when the more button is pressed -->
+    <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:orientation="horizontal"
+            android:id="@+id/expandable"
+            android:background="@color/Gray">
+
+        <!-- put whatever you want in the expandable view -->
+        <Button
+                style="@style/SaveImageDefaultButton"
+               android:id="@+id/saveimage"
+                android:layout_weight="0.5"
+                android:text="Save Image"
+                 />
+
+        <Button
+            style="@style/PreviewDefaultButton"
+                android:id="@+id/preview"
+                 android:layout_weight="0.5"
+                android:text="Visit Online for Preview"
+                />
+
+    </LinearLayout>
+    
+
+</LinearLayout>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">itunessax</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="SQLcreate">CREATE  TABLE "Albumstable" ("Id" INTEGER PRIMARY KEY  AUTOINCREMENT  NOT NULL  UNIQUE , "SongTitle" TEXT NOT NULL , "AlbumImageLink" TEXT NOT NULL , "SongWebLink" TEXT NOT NULL  UNIQUE );</string>
+    <string name="title_activity_web_view">WebView</string>
+
+</resources>
